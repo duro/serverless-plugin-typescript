@@ -10,7 +10,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "precommit": "npm run test",
-    "build": "rm -rf dist && tsc",
+    "build": "echo 'WHAMMMY' && rm -rf dist && tsc -b .",
     "pretest": "npm run lint",
     "test": "jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
